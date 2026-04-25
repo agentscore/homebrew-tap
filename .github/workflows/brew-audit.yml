@@ -1,0 +1,36 @@
+name: Brew Audit
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: brew audit ${{ matrix.formula }}
+    runs-on: macos-15
+    strategy:
+      fail-fast: false
+      matrix:
+        formula: [agentscore-pay]
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: brew tap-new (local)
+        run: |
+          brew tap-new agentscore/local --no-git
+          cp Formula/${{ matrix.formula }}.rb "$(brew --repository agentscore/local)/Formula/"
+
+      - name: brew audit (style + ruby)
+        run: brew audit --strict --online --formula agentscore/local/${{ matrix.formula }}
+
+      - name: brew install --dry-run
+        run: brew install --dry-run agentscore/local/${{ matrix.formula }}
