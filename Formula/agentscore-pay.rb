@@ -4,17 +4,19 @@
 # and sha256 and commits the rendered file into agentscore/homebrew-tap
 # on each release. Homebrew derives the version from the URL.
 #
+require "language/node"
+
 class AgentscorePay < Formula
   desc "CLI wallet for one-shell-command agent payments (x402 + MPP)"
   homepage "https://agentscore.sh"
-  url "https://registry.npmjs.org/@agent-score/pay/-/pay-0.1.0-rc.8.tgz"
-  sha256 "35015755ba7f2401dc4f0f7021f0a9b309f6980bbf8ae445d40f5ff2c4bfe37d"
+  url "https://registry.npmjs.org/@agent-score/pay/-/pay-0.1.0-rc.9.tgz"
+  sha256 "485e5684ed007c3a0db6ca75dc6fd19b86c919dc0ea57c6be7c2c43e9423f715"
   license "MIT"
 
   depends_on "node"
 
   def install
-    system "npm", "install", *Language::Node.std_npm_args(libexec)
+    system "npm", "install", *Language::Node.std_npm_install_args(libexec)
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
