@@ -22,7 +22,7 @@ jobs:
       matrix:
         formula: [agentscore-pay]
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: brew tap-new (local)
         run: |
