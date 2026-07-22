@@ -4,7 +4,7 @@ This repository hosts Homebrew formulas for AgentScore CLIs. The formulas are au
 
 ## Reporting a Vulnerability
 
-For vulnerabilities in the **formulas themselves** (manifest tampering, suspicious deps), open an issue or email security@agentscore.sh.
+For vulnerabilities in the **formulas themselves** (manifest tampering, suspicious deps), open an issue or email security@agentscore.com.
 
 For vulnerabilities in the **upstream tools** (e.g., `agentscore-pay`), report directly to the source repo:
 - `agentscore-pay` → https://github.com/agentscore/pay/security/advisories
