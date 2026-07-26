@@ -5,7 +5,7 @@
 ## Type
 
 - [ ] Tap-level (CI, README, dependabot, security)
-- [ ] Manual formula edit (will be overwritten on next upstream release — confirm intent)
+- [ ] Manual formula edit (will be overwritten on next upstream release; confirm intent)
 - [ ] Other
 
 ## Verification
