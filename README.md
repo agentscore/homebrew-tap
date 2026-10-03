@@ -1,6 +1,6 @@
 # agentscore/homebrew-tap
 
-Homebrew tap for [AgentScore](https://agentscore.sh) CLIs.
+Homebrew tap for [AgentScore](https://www.agentscore.com) CLIs.
 
 ## Install
 
@@ -11,7 +11,7 @@ brew install agentscore-pay
 
 ## Formulae
 
-- `agentscore-pay` — CLI wallet for one-shell-command agent payments across x402 (Base, Solana) and MPP (Tempo). [Source](https://github.com/agentscore/pay)
+- `agentscore-pay`: CLI wallet for one-shell-command agent payments across x402 (Base) and MPP (Tempo, Solana). [Source](https://github.com/agentscore/pay)
 
 ## Maintenance
 
