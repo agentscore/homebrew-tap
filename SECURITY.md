@@ -13,12 +13,11 @@ We follow coordinated disclosure. Public PoCs are appreciated only after a fix h
 
 ## Verification
 
-Releases of `agentscore-pay` (and other AgentScore CLIs distributed via this tap) include sigstore-signed binaries. Verify with:
+Releases of `agentscore-pay` (and other AgentScore CLIs distributed via this tap) attach sigstore-signed native binaries, each with a `.bundle` beside it. Verify one (cosign v2.4+ or v3) with:
 
 ```sh
 cosign verify-blob \
-  --signature agentscore-pay-darwin-arm64.sig \
-  --certificate agentscore-pay-darwin-arm64.pem \
+  --bundle agentscore-pay-darwin-arm64.bundle \
   --certificate-identity-regexp 'https://github.com/agentscore/.+' \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com \
   agentscore-pay-darwin-arm64

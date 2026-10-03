@@ -4,9 +4,9 @@ This tap is **auto-managed**: each AgentScore CLI release re-renders its formula
 
 ## What you can contribute
 
-- **Bug reports** — file an issue if a formula fails to install, audit, or test on a supported platform.
-- **Tap-level improvements** — README, CI, dependabot, security policy. Open a PR against `main`. The `brew-audit` workflow validates that the formulas still pass `brew audit --strict` after your change.
-- **New formulas** — for a new AgentScore CLI, add the formula via the upstream repo's release workflow (mirror the pattern in `agentscore/pay`'s `.github/workflows/publish.yml`). Direct PRs adding a `Formula/X.rb` here will be accepted but will be overwritten unless an upstream publish workflow exists.
+- **Bug reports**: file an issue if a formula fails to install, audit, or test on a supported platform.
+- **Tap-level improvements**: README, CI, dependabot, security policy. Open a PR against `main`. The `brew-audit` workflow validates that the formulas still pass `brew audit --strict` after your change.
+- **New formulas**: for a new AgentScore CLI, add the formula via the upstream repo's release workflow (mirror the pattern in `agentscore/pay`'s `.github/workflows/publish.yml`). Direct PRs adding a `Formula/X.rb` here will be accepted but will be overwritten unless an upstream publish workflow exists.
 
 ## What you cannot do
 
