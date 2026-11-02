@@ -7,8 +7,8 @@
 class AgentscorePay < Formula
   desc "CLI wallet for one-shell-command agent payments (x402 + MPP)"
   homepage "https://www.agentscore.com"
-  url "https://registry.npmjs.org/@agent-score/pay/-/pay-0.7.6.tgz"
-  sha256 "6e6909ae81ba6d38632f1d5e0bfe75a7e5b8ec6ad7c5210401898d7d3febc16c"
+  url "https://registry.npmjs.org/@agent-score/pay/-/pay-0.7.7.tgz"
+  sha256 "bdb9ede6841356c5cabdc4d27c0ada4b7c1aa27a12097a1d117c3d48dd86b241"
   license "MIT"
 
   depends_on "node"
